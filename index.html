@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090f20">
+<meta name="description" content="Small Galaxy is a single-player 3D space strategy game. Six civilizations, a living star chart, and two orders a round.">
+<title>small galaxy. — A few decisions. An entire civilization.</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23090f20'/%3E%3Cellipse cx='32' cy='32' rx='24' ry='11' transform='rotate(-34 32 32)' fill='none' stroke='%239abfff' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='10' fill='%239abfff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#frontier">Skip to the galaxy</a>
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Small Galaxy home"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><ellipse cx="24" cy="24" rx="21" ry="9" transform="rotate(-34 24 24)" stroke="currentColor" stroke-width="1.6"/><circle cx="24" cy="24" r="9" fill="currentColor"/></svg>small galaxy<span>.</span></a>
+  <nav class="nav-links" aria-label="Page">
+    <a href="#frontier">Frontier</a>
+    <a href="#civilizations">Civilizations</a>
+    <a href="#economy">Economy</a>
+    <a href="#devices">Screens</a>
+    <a href="support.html">Support</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div>
+      <p class="kicker">Touch Horizons · Prototype 0.5.2</p>
+      <h1>A few decisions. An entire civilization.</h1>
+      <p class="lede">Small Galaxy is a single-player 3D strategy game about one alien people and the worlds they decide to keep. The star chart is live. Five rivals play by the same rules you do. You get two orders a round, and each one can be spent only once.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#screens">Look through the campaign</a>
+      </div>
+      <p class="fine">Every picture on this page is a frame from the playable build: an Advanced chart, year 2425, round 5 of 18, guided as the Pelagic Choir.</p>
+    </div>
+    <figure class="hero-shot">
+      <button class="shot frame" type="button" data-shot="media/galaxy.jpg" data-caption="Round 5 on a 24-world Advanced chart. The Pelagic Choir holds five colonies and leads with 13 Legacy.">
+        <img src="media/galaxy.jpg" width="1440" height="900" alt="The Small Galaxy strategy screen: a 24-world star chart, the Pelagic Choir in the lead, and Thalassa selected as the capital.">
+      </button>
+      <figcaption class="caption">The whole empire on one screen. Credits, Science, Legacy, rivals, cargo, and the five orders.</figcaption>
+    </figure>
+  </section>
+
+  <ul class="facts" aria-label="What a campaign contains">
+    <li><strong>6</strong><span>civilizations, each with a bonus and a drawback</span></li>
+    <li><strong>24</strong><span>worlds on Advanced, or 16 on Frontier</span></li>
+    <li><strong>2</strong><span>orders a round. Unused orders do not carry over</span></li>
+    <li><strong>18</strong><span>rounds to a legacy, or 12 on the shorter charter</span></li>
+    <li><strong>6</strong><span>original stereo scores, one for each people, played offline</span></li>
+  </ul>
+
+  <section class="section" id="arrival">
+    <p class="kicker">Real-time scenes</p>
+    <h2>No video files. The galaxy renders while you watch.</h2>
+    <p class="intro">The opening, the alien council, the frontier briefing, and the homeworld approach are shot on the same engine as the campaign. Skip any sequence. Commentary is written, not voiced.</p>
+  </section>
+  <div class="cinema">
+    <figure class="tall">
+      <button class="shot frame" type="button" data-shot="media/world.jpg" data-caption="Opening shot. Speaker Neris introduces an ocean world while a ship crosses its orbit.">
+        <img src="media/world.jpg" width="1440" height="900" alt="Cinematic of a blue ocean planet with rings and a small green ship, titled Not just worlds. Possibilities.">
+      </button>
+      <figcaption class="caption">Arrival. Every planet has a climate and a three-level local trait.</figcaption>
+    </figure>
+    <figure>
+      <button class="shot frame" type="button" data-shot="media/council.jpg" data-caption="Council scene for the Pelagic Choir. Speaker Neris is rendered as a live 3D portrait.">
+        <img src="media/council.jpg" width="1440" height="900" alt="Close 3D portrait of Speaker Neris, a teal amphibious alien, titled The Pelagic Choir.">
+      </button>
+      <figcaption class="caption">The council. Six leaders, one at a time.</figcaption>
+    </figure>
+    <figure>
+      <button class="shot frame" type="button" data-shot="media/council-forge.jpg" data-caption="Architect Kor of the Ferran Forge. Infrastructure is cheaper; research costs more.">
+        <img src="media/council-forge.jpg" width="1440" height="900" alt="3D portrait of Architect Kor, a geometric alien with amber eyes, titled The Ferran Forge.">
+      </button>
+      <figcaption class="caption">Ferran Forge. “We do not inherit a future. We build one, layer by layer.”</figcaption>
+    </figure>
+  </div>
+
+  <section class="section" id="frontier">
+    <div class="split">
+      <div class="copy">
+        <p class="kicker">The chart</p>
+        <h2>Worlds, lanes, and a fleet that can actually get there.</h2>
+        <p class="intro">Drag to pan. Switch to Rotate and orbit the chart. Pinch to zoom. In this round Pioneer sits at Anvil, Strength 2, with three highlighted destinations. Lyra belongs to the Umbra Nomads, and the forecast says the defense would hold.</p>
+        <p class="intro">Unsurveyed systems stay marked with a question until a fleet gets close enough to read them.</p>
+      </div>
+      <div class="stack">
+        <figure>
+          <button class="shot frame" type="button" data-shot="media/navigate.jpg" data-caption="Navigate order. Pioneer can reach Lyra, Echo, or Rime from Anvil.">
+            <img src="media/navigate.jpg" width="1440" height="900" alt="Galaxy map in Navigate mode, with Pioneer ready and Lyra, Echo, and Rime offered as destinations.">
+          </button>
+          <figcaption class="caption">Plot a course. Hostile systems still block a longer jump.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="pair" style="margin-top:16px">
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/launch.jpg" data-caption="Combat forecast before spending the Navigate order: Pioneer strength 2 against Lyra defense 4.">
+          <img src="media/launch.jpg" width="1440" height="900" alt="Lyra selected as a frozen Umbra world, with a combat forecast of 2 versus 4 and a Commit attack button.">
+        </button>
+        <figcaption class="caption">The odds are on the screen before the order is spent.</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/frontier-cinema.jpg" data-caption="Frontier briefing. Sixteen worlds and three rivals, or twenty-four worlds and five. The order limit stays at two.">
+          <img src="media/frontier-cinema.jpg" width="1440" height="900" alt="Cinematic star chart titled Choose the scale of your story, with colored planets linked by lanes.">
+        </button>
+        <figcaption class="caption">A larger galaxy gives more choices, not more orders.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="kicker">Two charters</p>
+    <h2>Choose the scale before the homeworld approach.</h2>
+    <div class="pair">
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/frontier-standard.jpg" data-caption="Frontier charter: 16 planets, 3 AI rivals, 12 rounds.">
+          <img src="media/frontier-standard.jpg" width="1440" height="900" alt="Galaxy setup with Frontier selected: 16 planets, 3 AI rivals, and 12 rounds.">
+        </button>
+        <figcaption class="caption">Frontier. A shorter campaign with clearer priorities.</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/frontier.jpg" data-caption="Advanced charter: 24 planets, 5 AI rivals, 18 rounds. A live preview of the chart sits beside the choice.">
+          <img src="media/frontier.jpg" width="1440" height="900" alt="Galaxy setup with Advanced selected: 24 planets, 5 AI rivals, 18 rounds, and a live galaxy preview.">
+        </button>
+        <figcaption class="caption">Advanced. More rivals, and six extra rounds for trade and research.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="kicker">Five orders</p>
+    <h2>What you leave undone matters too.</h2>
+    <div class="orders">
+      <article><em>01</em><h3>Navigate</h3><p>Move a fleet along the lanes. A stronger defense wins. Ties hold.</p></article>
+      <article><em>02</em><h3>Colonize</h3><p>Found a world your fleet already orbits. Income starts next round.</p></article>
+      <article><em>03</em><h3>Develop</h3><p>Raise Industry, Research, Defense, or Commerce by one level.</p></article>
+      <article><em>04</em><h3>Research</h3><p>Buy one empire-wide level. It stays yours even if a colony is lost.</p></article>
+      <article><em>05</em><h3>Trade</h3><p>Sell cargo, fill a contract, open a route, or offer a pact.</p></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="split flip">
+      <div class="copy">
+        <p class="kicker">Colonies</p>
+        <h2>Four systems on every world you keep.</h2>
+        <p class="intro">Thalassa is an ocean capital with a choral reef. Commerce is the local specialty, still undeveloped in this round. Industry I would add credits on top of the reef. Levels run I, II, and III, and they cannot be skipped.</p>
+        <p class="intro">An adviser sits under the panel and suggests the next order. It does not take the turn for you.</p>
+      </div>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/develop.jpg" data-caption="Develop order on Thalassa. Industry I costs 4 credits and is the first available upgrade.">
+          <img src="media/develop.jpg" width="1440" height="900" alt="Develop mode on Thalassa, showing the choral reef trait and an Industry upgrade to level I.">
+        </button>
+        <figcaption class="caption">One Develop order advances one category, on one world, by one level.</figcaption>
+      </figure>
+    </div>
+    <div class="pair" style="margin-top:16px">
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/research.jpg" data-caption="Research screen. Navigation, Habitats, Industry, Science, Defense, and Commerce, three levels each.">
+          <img src="media/research.jpg" width="1440" height="900" alt="Research dialog titled Six disciplines. Three levels each, with Fold drives available for 5 Science.">
+        </button>
+        <figcaption class="caption">17 Science in the bank. Fold drives are the next Navigation level.</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/dossier.jpg" data-caption="Planet dossier for Thalassa. The choral reef pays extra cargo at Commerce I, II, and III.">
+          <img src="media/dossier.jpg" width="1440" height="900" alt="Thalassa planet dossier, an ocean world whose choral reef adds cargo and science as Commerce is upgraded.">
+        </button>
+        <figcaption class="caption">Open any surveyed world. The trait stays hidden until you can see it.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="economy">
+    <p class="kicker">Intergalactic exchange</p>
+    <h2>Prosper beyond your borders.</h2>
+    <p class="intro">Planets mint Alloys, Biomass, or Relics on their own. The exchange is a local simulation: finite stock, live prices, delivery contracts, recurring routes, and one pact slot. This round the Choir is holding 6 Alloys, 11 Biomass, and 1 Relic, with a partner lane already running from Aurelia back to Thalassa.</p>
+    <div class="pair">
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/market.jpg" data-caption="Market tab. Export three Alloys for 6 credits, or three Biomass for 3.">
+          <img src="media/market.jpg" width="1440" height="900" alt="Trade market showing Alloys, Biomass, and Relics with export and import prices.">
+        </button>
+        <figcaption class="caption">Prices move with stock, round, and species.</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/contracts.jpg" data-caption="Contracts from Andromeda Relay, Sable Caravan, and Triangulum Vault.">
+          <img src="media/contracts.jpg" width="1440" height="900" alt="Three delivery contracts: 4 Alloys, 5 Biomass, and 3 Relics, paying credits and science.">
+        </button>
+        <figcaption class="caption">Each offer can be filled once, then it waits for the next cycle.</figcaption>
+      </figure>
+    </div>
+    <div class="pair" style="margin-top:16px">
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/routes.jpg" data-caption="An active partner route from Aurelia to Thalassa pays 1 credit a round.">
+          <img src="media/routes.jpg" width="1440" height="900" alt="Trade routes panel with an active Aurelia to Thalassa lane and a note that Commerce I is required to open your own.">
+        </button>
+        <figcaption class="caption">A route ships one cargo a round. It is not a peace treaty.</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/pacts.jpg" data-caption="Pact offers for Ferran, Lumen, Khepri, Auric, and Umbra. Auric would pay the partner an extra credit.">
+          <img src="media/pacts.jpg" width="1440" height="900" alt="Pact screen offering a three-round trade pact to each of the five rival civilizations.">
+        </button>
+        <figcaption class="caption">One pact. Three rounds of shared income, and no attacks between you.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="civilizations">
+    <p class="kicker">Six peoples</p>
+    <h2>Who will you guide?</h2>
+    <p class="intro">The portrait is a live preview, and the soundtrack changes with the people you choose. Pelagic Choir is on the left. Lumen Archive, with Curator Sera, is on the right.</p>
+    <div class="pair">
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/races.jpg" data-caption="Race selection. Pelagic Choir is selected, with Speaker Neris beside the six choices and the Midnight Blue theme.">
+          <img src="media/races.jpg" width="1440" height="900" alt="Civilization select showing six races and a 3D preview of Speaker Neris of the Pelagic Choir.">
+        </button>
+        <figcaption class="caption">Speaker Neris. Ocean and frozen colonies suit the Choir.</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/races-lumen.jpg" data-caption="The same screen with the Lumen Archive selected.">
+          <img src="media/races-lumen.jpg" width="1440" height="900" alt="Civilization select with the Lumen Archive highlighted and its leader preview on the right.">
+        </button>
+        <figcaption class="caption">Lumen Archive. Cheaper research, a brighter capital, costlier fleets.</figcaption>
+      </figure>
+    </div>
+    <div class="races">
+      <article style="--race:#82ddc8"><h3>Pelagic Choir</h3><p class="species">Amphibious symbionts · Thalassa</p><p>Ocean and frozen colonies cost 2 fewer credits and produce +1 credit a round.</p><p class="drawback">Fortress upgrades cost +1 credit.</p></article>
+      <article style="--race:#edb779"><h3>Ferran Forge</h3><p class="species">Silicon-based artisans · Ferrum</p><p>Colony upgrades cost 1 fewer credit. Airless worlds need no Habitat research.</p><p class="drawback">Every research level costs +1 Science.</p></article>
+      <article style="--race:#b7acf2"><h3>Lumen Archive</h3><p class="species">Photonic intelligences · Prism</p><p>Research costs 1 fewer Science, and the capital produces extra Science.</p><p class="drawback">New fleets cost +1 credit.</p></article>
+      <article style="--race:#e596a9"><h3>Khepri Brood</h3><p class="species">Cooperative insectoids · Khepri</p><p>Colonies cost 1 fewer credit. Reinforcements restore 3 Strength instead of 2.</p><p class="drawback">Market exports earn 1 fewer credit per unit.</p></article>
+      <article style="--race:#e6d387"><h3>Auric Exchange</h3><p class="species">Avian merchant clans · Aurelia</p><p>Better market prices. Routes and pacts earn +1 credit.</p><p class="drawback">New fleets begin at Strength 2.</p></article>
+      <article style="--race:#83c0ee"><h3>Umbra Nomads</h3><p class="species">Void-adapted cephalopods · Umbriel</p><p>Fleets travel one extra lane per order, up to four.</p><p class="drawback">The capital produces 1 fewer credit a round.</p></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="kicker">Seven climates</p>
+    <h2>Every world has a purpose.</h2>
+    <div class="pair">
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/planets.jpg" data-caption="Field guide: temperate, ocean, mineral, frozen, airless, relic, and desert worlds.">
+          <img src="media/planets.jpg" width="1440" height="900" alt="Planet field guide listing seven climates, each with its own cargo and settlement rule.">
+        </button>
+        <figcaption class="caption">Temperate, ocean, mineral, frozen, airless, relic, desert.</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/deployment.jpg" data-caption="Homeworld approach. The Pelagic fleet arrives at Thalassa before the first order.">
+          <img src="media/deployment.jpg" width="1440" height="900" alt="Cinematic approach to a blue homeworld, titled This is where our story begins.">
+        </button>
+        <figcaption class="caption">Deployment. The homeworld is already yours. The first income waits until next round.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="split">
+      <div class="copy">
+        <p class="kicker">Atmosphere and sound</p>
+        <h2>Four palettes. The planets stay themselves.</h2>
+        <p class="intro">Midnight Blue, Crimson, Gold, and Forest recolor the interface. Faction colors and climates do not move. The same round, switched to Gold, is on the right.</p>
+        <p class="intro">Pelagic plays Tides of Thalassa: harp, flute, strings, choir, and light percussion, about 86 seconds, stereo. A manual pause stays paused.</p>
+      </div>
+      <div class="stack">
+        <figure>
+          <button class="shot frame" type="button" data-shot="media/themes.jpg" data-caption="Atmosphere and sound. Midnight Blue is selected, and Tides of Thalassa is playing.">
+            <img src="media/themes.jpg" width="1440" height="900" alt="Settings dialog with four color themes and the Pelagic soundtrack Tides of Thalassa.">
+          </button>
+          <figcaption class="caption">Theme, music, effects, cinematics, and the adviser, in one place.</figcaption>
+        </figure>
+        <figure>
+          <button class="shot frame" type="button" data-shot="media/galaxy-gold.jpg" data-caption="The same round 5 chart after switching the interface to Gold.">
+            <img src="media/galaxy-gold.jpg" width="1440" height="900" alt="The galaxy map recolored in the Gold theme, with Lyra selected and an Umbra fleet in orbit.">
+          </button>
+          <figcaption class="caption">Gold, applied in the middle of the campaign.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="devices">
+    <p class="kicker">iPad and iPhone</p>
+    <h2>The same round, at each screen’s own size.</h2>
+    <p class="intro">The scenes above are a 1440×900 desktop frame. These are shot from the same build at iPad size and at iPhone screen resolution, landscape and portrait. Round 5, year 2425, Pelagic Choir. Open a frame to see it at full resolution.</p>
+
+    <div class="device-block">
+      <h3>iPad</h3>
+      <p class="meta">Landscape 2048×1536, from a 1024×768 point screen. Portrait 1536×2048, from 768×1024.</p>
+      <div class="ipad-stage">
+        <figure>
+          <button class="shot bezel ipad-land" type="button" data-shot="media/ipad-landscape-play.jpg" data-caption="iPad landscape, 2048×1536. Round 5 with the full chart, rival list, and five orders.">
+            <img src="media/ipad-landscape-play.jpg" width="2048" height="1536" alt="iPad landscape gameplay at 2048 by 1536 pixels, showing the 24-world chart, Thalassa, and the five orders.">
+          </button>
+          <figcaption class="caption">Landscape · 2048×1536</figcaption>
+        </figure>
+        <figure>
+          <button class="shot bezel ipad-port" type="button" data-shot="media/ipad-portrait-play.jpg" data-caption="iPad portrait, 1536×2048. The chart fills the screen and Thalassa sits in the drawer.">
+            <img src="media/ipad-portrait-play.jpg" width="1536" height="2048" alt="iPad portrait gameplay at 1536 by 2048 pixels, with the star chart above the Thalassa drawer and five orders.">
+          </button>
+          <figcaption class="caption">Portrait · 1536×2048</figcaption>
+        </figure>
+      </div>
+      <div class="more-shots">
+        <figure class="span2">
+          <button class="shot frame" type="button" data-shot="media/ipad-landscape-menu.jpg" data-caption="iPad landscape menu, 2048×1536.">
+            <img src="media/ipad-landscape-menu.jpg" width="2048" height="1536" alt="iPad landscape main menu at 2048 by 1536 pixels, title small galaxy over the star chart.">
+          </button>
+          <figcaption class="caption">Menu · landscape</figcaption>
+        </figure>
+        <figure>
+          <button class="shot frame" type="button" data-shot="media/ipad-portrait-races.jpg" data-caption="iPad portrait civilization select, 1536×2048. Speaker Neris beside the six peoples.">
+            <img src="media/ipad-portrait-races.jpg" width="1536" height="2048" alt="iPad portrait race selection at 1536 by 2048 pixels, with Speaker Neris and six civilizations.">
+          </button>
+          <figcaption class="caption">Civilizations · portrait</figcaption>
+        </figure>
+        <figure class="span2">
+          <button class="shot frame" type="button" data-shot="media/ipad-landscape-races.jpg" data-caption="iPad landscape civilization select, 2048×1536.">
+            <img src="media/ipad-landscape-races.jpg" width="2048" height="1536" alt="iPad landscape civilization select at 2048 by 1536 pixels.">
+          </button>
+          <figcaption class="caption">Civilizations · landscape</figcaption>
+        </figure>
+        <figure>
+          <button class="shot frame" type="button" data-shot="media/ipad-portrait-menu.jpg" data-caption="iPad portrait menu, 1536×2048.">
+            <img src="media/ipad-portrait-menu.jpg" width="1536" height="2048" alt="iPad portrait main menu at 1536 by 2048 pixels.">
+          </button>
+          <figcaption class="caption">Menu · portrait</figcaption>
+        </figure>
+            <img src="media/ipad-landscape-develop.jpg" width="2048" height="1536" alt="iPad landscape Develop mode at 2048 by 1536 pixels, Thalassa selected and colony management open.">
+          </button>
+          <figcaption class="caption">Develop · landscape</figcaption>
+        </figure>
+        <figure>
+          <button class="shot frame" type="button" data-shot="media/ipad-portrait-develop.jpg" data-caption="iPad portrait Develop order, 1536×2048.">
+            <img src="media/ipad-portrait-develop.jpg" width="1536" height="2048" alt="iPad portrait Develop mode at 1536 by 2048 pixels.">
+          </button>
+          <figcaption class="caption">Develop · portrait</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="device-block">
+      <h3>iPhone</h3>
+      <p class="meta">Portrait 1170×2532 and landscape 2532×1170. That is a 390×844 point phone at 3×, turned both ways.</p>
+      <div class="phone-stage">
+        <figure>
+          <button class="shot bezel phone-port" type="button" data-shot="media/iphone-portrait-play.jpg" data-caption="iPhone portrait, 1170×2532. Round 5, Thalassa, two orders remaining.">
+            <img src="media/iphone-portrait-play.jpg" width="1170" height="2532" alt="iPhone portrait gameplay at 1170 by 2532 pixels, star chart above Thalassa and the five orders.">
+          </button>
+          <figcaption class="caption">Portrait · 1170×2532</figcaption>
+        </figure>
+        <figure>
+          <button class="shot bezel phone-land" type="button" data-shot="media/iphone-landscape-play.jpg" data-caption="iPhone landscape, 2532×1170. The chart sits beside the Thalassa panel.">
+            <img src="media/iphone-landscape-play.jpg" width="2532" height="1170" alt="iPhone landscape gameplay at 2532 by 1170 pixels, chart on the left and Thalassa details on the right.">
+          </button>
+          <figcaption class="caption">Landscape · 2532×1170</figcaption>
+        </figure>
+      </div>
+      <div class="more-shots">
+        <figure>
+          <button class="shot frame" type="button" data-shot="media/iphone-portrait-menu.jpg" data-caption="iPhone portrait menu, 1170×2532.">
+            <img src="media/iphone-portrait-menu.jpg" width="1170" height="2532" alt="iPhone portrait main menu at 1170 by 2532 pixels.">
+          </button>
+          <figcaption class="caption">Menu · portrait</figcaption>
+        </figure>
+        <figure>
+          <button class="shot frame" type="button" data-shot="media/iphone-portrait-races.jpg" data-caption="iPhone portrait civilization select, 1170×2532.">
+            <img src="media/iphone-portrait-races.jpg" width="1170" height="2532" alt="iPhone portrait civilization select at 1170 by 2532 pixels.">
+          </button>
+          <figcaption class="caption">Civilizations · portrait</figcaption>
+        </figure>
+        <figure>
+          <button class="shot frame" type="button" data-shot="media/iphone-portrait-develop.jpg" data-caption="iPhone portrait Develop order, 1170×2532. Industry I is offered for 4 credits.">
+            <img src="media/iphone-portrait-develop.jpg" width="1170" height="2532" alt="iPhone portrait Develop mode at 1170 by 2532 pixels, with the colony drawer open on Thalassa.">
+          </button>
+          <figcaption class="caption">Develop · portrait</figcaption>
+        </figure>
+        <figure class="span2">
+          <button class="shot frame" type="button" data-shot="media/iphone-landscape-menu.jpg" data-caption="iPhone landscape menu, 2532×1170.">
+            <img src="media/iphone-landscape-menu.jpg" width="2532" height="1170" alt="iPhone landscape main menu at 2532 by 1170 pixels, title over the star chart.">
+          </button>
+          <figcaption class="caption">Menu · landscape</figcaption>
+        </figure>
+        <figure class="span2">
+          <button class="shot frame" type="button" data-shot="media/iphone-landscape-races.jpg" data-caption="iPhone landscape civilization select, 2532×1170.">
+            <img src="media/iphone-landscape-races.jpg" width="2532" height="1170" alt="iPhone landscape civilization select at 2532 by 1170 pixels.">
+          </button>
+          <figcaption class="caption">Civilizations · landscape</figcaption>
+        </figure>
+            <img src="media/iphone-landscape-develop.jpg" width="2532" height="1170" alt="iPhone landscape Develop mode at 2532 by 1170 pixels.">
+          </button>
+          <figcaption class="caption">Develop · landscape</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="screens">
+    <p class="kicker">The campaign, frame by frame</p>
+    <h2>Screenshots from the build.</h2>
+    <p class="intro">Open any frame. These are the same scenes as above, plus the title card, the opening chart, and the field guide, collected in one place.</p>
+    <div class="gallery">
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/menu.jpg" data-caption="Title card. small galaxy. A few consequential decisions. An entire civilization.">
+          <img src="media/menu.jpg" width="1440" height="900" alt="Main menu over a wide 3D star chart, with the title small galaxy.">
+        </button>
+        <figcaption class="caption">Title</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/arrival.jpg" data-caption="First shot of the opening. Pathfinder Ilyr of the Umbra Nomads.">
+          <img src="media/arrival.jpg" width="1440" height="900" alt="Opening cinematic titled Every journey begins with a small horizon, over a distant galaxy chart.">
+        </button>
+        <figcaption class="caption">Opening</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/guide.jpg" data-caption="Field guide: explore, develop, research, trade, connect, and make the species matter.">
+          <img src="media/guide.jpg" width="1440" height="900" alt="How to play dialog titled A civilization, not a to-do list, with six illustrated rules.">
+        </button>
+        <figcaption class="caption">Field guide</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/galaxy.jpg" data-caption="Full campaign view, round 5, Pelagic Choir leading.">
+          <img src="media/galaxy.jpg" width="1440" height="900" alt="Full desktop campaign with the star chart, rival list, and command dock.">
+        </button>
+        <figcaption class="caption">Round 5</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/navigate.jpg" data-caption="Navigate order from Anvil.">
+          <img src="media/navigate.jpg" width="1440" height="900" alt="Navigate mode with Pioneer ready to leave Anvil.">
+        </button>
+        <figcaption class="caption">Navigate</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/launch.jpg" data-caption="Attack forecast against Lyra.">
+          <img src="media/launch.jpg" width="1440" height="900" alt="Combat forecast before attacking the frozen world Lyra.">
+        </button>
+        <figcaption class="caption">Forecast</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/develop.jpg" data-caption="Develop Thalassa.">
+          <img src="media/develop.jpg" width="1440" height="900" alt="Colony development panel for the capital Thalassa.">
+        </button>
+        <figcaption class="caption">Develop</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/research.jpg" data-caption="Six research disciplines.">
+          <img src="media/research.jpg" width="1440" height="900" alt="Research screen for Navigation and the other five disciplines.">
+        </button>
+        <figcaption class="caption">Research</figcaption>
+      </figure>
+      <figure>
+        <button class="shot frame" type="button" data-shot="media/market.jpg" data-caption="Cargo market.">
+          <img src="media/market.jpg" width="1440" height="900" alt="Market prices for Alloys, Biomass, and Relics.">
+        </button>
+        <figcaption class="caption">Market</figcaption>
+      </figure>
+    </div>
+    <p class="note">The frames in this strip are 1440×900 desktop shots. iPad frames are 2048×1536 landscape and 1536×2048 portrait. iPhone frames are 1170×2532 portrait and 2532×1170 landscape.</p>
+  </section>
+</main>
+
+<footer>
+  <p>small galaxy. is a local, single-player game. Rivals run on your device, and saves stay on the device.</p>
+  <p>Touch Horizons · 0.5.2</p>
+  <p class="legal-links"><a href="privacy.html">Privacy Policy</a> <a href="terms.html">Terms of Service</a> <a href="support.html">Support</a></p>
+</footer>
+
+<dialog id="viewer">
+  <form method="dialog"><button type="submit">Close</button></form>
+  <img alt="">
+  <p></p>
+</dialog>
+<script>
+const viewer = document.querySelector('#viewer');
+const view = viewer.querySelector('img');
+const cap = viewer.querySelector('p');
+document.body.addEventListener('click', event => {
+  const shot = event.target.closest('[data-shot]');
+  if (!shot) return;
+  const img = shot.querySelector('img');
+  view.src = shot.dataset.shot;
+  view.alt = img ? img.alt : '';
+  cap.textContent = shot.dataset.caption || view.alt;
+  viewer.showModal();
+});
+</script>
+</body>
+</html>

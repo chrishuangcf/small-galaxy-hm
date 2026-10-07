@@ -259,21 +259,43 @@ button.shot {
 .races p { margin: 0; color: var(--body); font-size: 14px; }
 .races .drawback { margin-top: 8px; color: var(--amber); font-size: 13px; }
 
-.device-block { margin-top: 42px; }
-.device-block h3 { margin: 0; font-size: 34px; }
-.device-block .meta { margin: 8px 0 18px; color: var(--muted); font-size: 14px; max-width: 46rem; }
-.ipad-stage {
-  display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(200px, 0.55fr);
-  gap: 18px;
-  align-items: start;
+[hidden] { display: none !important; }
+
+.hero-art { position: relative; padding: 0 0 56px; }
+.hero-art .hero-ipad { width: 88%; }
+.hero-art .hero-phone { position: absolute; right: 0; bottom: 0; width: 24%; transform: rotate(3deg); }
+.hero-art .bezel { box-shadow: 0 40px 90px rgba(0, 0, 0, 0.55), 0 0 80px rgba(120, 160, 255, 0.12); }
+
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 22px; }
+.tabs [role="tab"] {
+  font: 600 14px/1 var(--sans);
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg-raise);
+  color: var(--body);
+  cursor: pointer;
 }
-.phone-stage {
-  display: grid;
-  grid-template-columns: minmax(180px, 250px) minmax(0, 1fr);
-  gap: 22px;
-  align-items: center;
+.tabs [role="tab"]:hover { border-color: var(--accent); }
+.tabs [aria-selected="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.pill { margin-left: 6px; padding: 3px 8px; border-radius: 999px; background: var(--amber); color: #2a2208; font-size: 11px; }
+.panel .meta { margin: 0 0 22px; color: var(--muted); font-size: 14px; max-width: 46rem; }
+.panel figure { margin: 0; }
+.soon {
+  margin: 0 0 22px;
+  padding: 14px 18px;
+  border: 1px solid rgba(234, 208, 137, 0.35);
+  border-radius: 14px;
+  background: rgba(234, 208, 137, 0.08);
+  color: var(--body);
+  font-size: 14px;
 }
+.soon strong { color: var(--amber); }
+
+.phone-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; align-items: start; }
+.land-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 30px; }
+.ipad-feature { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.7fr); gap: 22px; align-items: center; }
+.ipad-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 30px; align-items: start; }
 .bezel {
   background: #05080f;
   border: 1px solid var(--line);
@@ -285,22 +307,15 @@ button.shot {
 .bezel img { border-radius: 12px; }
 .bezel.phone-port img { border-radius: 26px; }
 .bezel.phone-land img { border-radius: 18px; }
-.more-shots {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 18px;
-}
-.more-shots .span2 { grid-column: span 2; }
-.more-shots figure { margin: 0; }
-
+.bezel { transition: transform .25s ease; }
+.bezel:hover { transform: translateY(-4px); }
+.hero-art .hero-phone:hover { transform: rotate(3deg) translateY(-4px); }
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px 14px;
 }
 .gallery figure { margin: 0; }
-.gallery .portrait { grid-row: span 1; }
 
 .note {
   margin-top: 22px;
@@ -352,10 +367,11 @@ footer p { margin: 0; max-width: 46rem; }
   .cinema .tall { grid-row: auto; }
   .facts { grid-template-columns: 1fr 1fr; }
   .facts li:last-child { grid-column: 1 / -1; }
-  .orders, .ipad-stage, .phone-stage, .more-shots { grid-template-columns: 1fr; }
-  .more-shots .span2 { grid-column: auto; }
-  .phone-stage { justify-items: center; }
-  .bezel.phone-port { width: min(260px, 100%); }
+  .orders, .ipad-feature, .ipad-grid, .land-row { grid-template-columns: 1fr; }
+  .phone-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .ipad-grid.ports { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ipad-feature .ipad-port { width: min(320px, 100%); margin: 0 auto; }
+  .hero-art { padding-bottom: 40px; }
   .nav { padding: 14px 16px; gap: 12px; }
   .nav-links { display: none; }
   .hero, .section, .cinema, .facts, footer { width: min(1440px, calc(100% - 32px)); }
@@ -365,6 +381,7 @@ footer p { margin: 0; max-width: 46rem; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .bezel { transition: none; }
 }
 
 /* legal and support pages */
